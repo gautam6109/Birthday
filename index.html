@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Surprise</title>
+    <style>
+        body {
+            background: #ffe6f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .lock-box {
+            background: white;
+            padding: 40px;
+            display: inline-block;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        input {
+            padding: 10px;
+            width: 250px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 16px;
+            background-color: #ff66a3;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="lock-box">
+        <h2>🎁 Enter Password to Unlock Taniya’s Surprise</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <br>
+        <button onclick="checkPassword()">Unlock</button>
+        <p id="error" style="color:red;"></p>
+    </div>
+
+    <script>
+        function checkPassword() {
+            const input = document.getElementById('password').value;
+            if (input === 'happy20thbirthday') {
+                window.location.href = 'home.html';
+            } else {
+                document.getElementById('error').innerText = "Wrong password! Try again.";
+            }
+        }
+    </script>
+</body>
+</html>
