@@ -2,30 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Jaan</title>
+  <title>Happy Birthday Jaan 💖</title>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; background: #fffbe6; margin: 0; padding: 20px; text-align: center; }
-    h1 { color: #ff1493; }
-    .letter { max-width: 700px; margin: auto; font-size: 18px; line-height: 1.6; background: #fff0f5; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .gallery img { max-width: 100%; height: auto; border-radius: 12px; margin: 10px 0; }
-    .gallery { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+    body {
+      font-family: Arial;
+      background-color: #fff0f5;
+      text-align: center;
+      padding: 20px;
+      display: none;
+    }
+    img {
+      width: 300px;
+      margin: 10px;
+      border-radius: 12px;
+    }
   </style>
-  <script>
-    var password = prompt("Enter password to view this page:");
-    if(password !== "happy20thbirthday") { document.body.innerHTML = "Access Denied 🚫"; }
-  </script>
 </head>
 <body>
-  <h1>Happy Birthday Taniya ❤️</h1>
-  
-<div class="letter">
-  <p>Jaan, happy 20th birthday 😘</p>
-  <p>Jaan ye tumhara mere sath 6th birthday hai. Maine tumhe waha se dekha hai jab tum literally bachi thi, aur aaj dekho hum dono kaha se kaha aa gaye hain. We both are grown up.</p>
-  <p>Humne ek dusre ko sath me bada hote dekha hai, ek dusre ka sath dete dekha hai. Tumhara har birthday mere liye ek achievement hai. Har saal lagta hai aur ek birthday hum sath hain. Tumhara har birthday mein sath hi hounga.</p>
-  <p>Tum jab paida hui hogi na tab tumhe pata bhi nahi hoga ke tum mere liye paida hui ho. Bhagwan ne tumhe mere liye hi bheja tha.</p>
-  <p>Jaan mujhe tumse milna tha, tumhare sath tumhara birthday manana tha... but koi na, next year jaha bhi rahogi tum, main aaunga tumse milne. Sath me rahenge, ghoomenge, sab kuch karenge.</p>
-  <p>I love you so so so so so so so so so so so so so much my love 😘</p>
-</div>
+  <h1>Happy 20th Birthday, Taniya (Jaan) 🎂</h1>
+  <p>
+    Jaan ye tumhara mere sath 6th birthday hai...<br>
+    Hum dono ek dusre ke sath bade hue hain...<br>
+    I love you so much my love 😘
+  </p>
 
-  <div class="gallery">
+  <audio autoplay loop>
+    <source src="Hawa Banke.mp3" type="audio/mpeg">
+  </audio>
+
+  <div>
+    <img src="20211028_182940.jpg">
+    <img src="20211106_165948.jpg">
+    <img src="20220131_173758.jpg">
+    <img src="20220310_185349.jpg">
+    <img src="20220310_172641.jpg">
+    <img src="20221013_155504.jpg">
+    <img src="20231023_194825.jpg">
+    <img src="6AD26570-F100-46EB-8F0A-499F9D87B7B8.JPG">
+    <img src="185b4f9f-a11b-46dd-ae07-50dab5dc502e.JPG">
+  </div>
+
+  <script>
+    const password = "happy20thbirthday";
+    const input = prompt("Enter password:");
+    if (input === password) {
+      document.body.style.display = "block";
+    } else {
+      alert("Wrong password.");
+      location.href = "https://www.google.com";
+    }
+  </script>
+</body>
+</html>
